@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(38, 196, 181, 255);
+}
+.container {
+  height: 25rem;
+  width: 45rem;
+  background-color: rgba(61, 61, 61, 255);
+  border-radius: 10px;
+  position: relative;
+}
+
+.v-line {
+  border-left: 5px solid rgba(38, 196, 181, 255);
+  height: 7rem;
+  width: 9rem;
+  position: absolute;
+  left: 70px;
+  top: 100px;
+}
+.title {
+  height: 8rem;
+  width: 9rem;
+  /* background-color: greenyellow; */
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  /* border-left: 5px solid rgba(38, 196, 181, 255); */
+  /* padding: 50px; */
+  transform: scale(1);
+  animation: textani 1s linear infinite;
+}
+.title-text {
+  /* font-size: 2.2rem; */
+  font-size: 200%;
+  font-weight: bolder;
+  padding-left: 15px;
+  color: rgba(38, 196, 181, 255);
+  /* transform: scale3d(1.5); */
+}
+@keyframes textani {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.marks {
+  height: 15rem;
+  width: 15rem;
+  /* background-color: lemonchiffon; */
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.marks-input {
+  -moz-appearance: textfield;
+  height: 40px;
+  width: 240px;
+  border: none;
+  background-color: rgba(61, 61, 61, 255);
+  border-bottom: 2px solid rgba(83, 83, 83, 255);
+  color: white;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+  padding-left: 10px;
+  /* user-select: none; */
+  outline: none;
+}
+button {
+  padding: 5px 0px 5px 0px;
+  width: 200px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(38, 196, 181, 255);
+  cursor: pointer;
+}
+.result-text {
+  position: absolute;
+  bottom: 5px;
+  height: 80px;
+  width: 95%;
+  left: 5px;
+  outline: none;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgba(61, 61, 61, 255);
+  border: none;
+  color: white;
+  padding-left: 10px;
+}
